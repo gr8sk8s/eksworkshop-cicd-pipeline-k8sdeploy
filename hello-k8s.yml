@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
         - name: hello-k8s
-          image: 046982166533.dkr.ecr.us-east-2.amazonaws.com/cicd-pipeline-ecrdockerrepository-j0zuykzytgsc:eksworkshop-cicd-pipeline-imagebuilder-main--2022-08-27-07-17-59--6dc83378
+          image: 046982166533.dkr.ecr.us-east-2.amazonaws.com/cicd-codepipeline-ecrdockerrepository-7lg1dtvyjmqu:eksworkshop-cicd-pipeline-imagebuilder-main--2022-08-28-13-56-28--fd099e55
           securityContext:
             privileged: false
             readOnlyRootFilesystem: true
