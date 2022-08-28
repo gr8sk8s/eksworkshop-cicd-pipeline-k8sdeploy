@@ -33,7 +33,7 @@ spec:
           image: nginx:1.14.2
           securityContext:
             privileged: false
-            readOnlyRootFilesystem: true
+            readOnlyRootFilesystem: false
             allowPrivilegeEscalation: false
           ports:
             - containerPort: 80
