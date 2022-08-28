@@ -6,6 +6,7 @@ spec:
   type: LoadBalancer
   ports:
     - port: 80
+      targetPort: 8080
   selector:
     app: hello-k8s
 ---
@@ -30,10 +31,10 @@ spec:
     spec:
       containers:
         - name: hello-k8s
-          image: nginx:1.15.5
+          image: 046982166533.dkr.ecr.us-east-2.amazonaws.com/cicd-pipeline-ecrdockerrepository-j0zuykzytgsc:eksworkshop-cicd-pipeline-imagebuilder-main--2022-08-27-07-17-59--6dc83378
           securityContext:
             privileged: false
-            readOnlyRootFilesystem: false
+            readOnlyRootFilesystem: true
             allowPrivilegeEscalation: false
           ports:
-            - containerPort: 80
+            - containerPort: 8080
